@@ -83,7 +83,7 @@ h1 {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 3rem;
   width: 90%;
 }
 
@@ -104,4 +104,5 @@ h1 {
 
 .modalImage {
   width: 40%;
+  border-radius: 8px;
 }

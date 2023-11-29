@@ -3,7 +3,6 @@ const modal = document.querySelector('.modal');
 let countryList;
 
 const API_ALL = 'https://restcountries.com/v3/all';
-const API_NAME = 'https://restcountries.com/v3.1/name/'
 
 const getData = async () => {
     try {
@@ -66,8 +65,6 @@ const renderData = async () => {
         const cards = document.querySelectorAll('.card');
         cards.forEach(card => {
             card.addEventListener('click', () => {
-                let image = card.children[0]
-                console.log(image)
                 let name = (card.id).replaceAll('.', ' ');
                 let modalCountries = countryList.filter(country => country.name.common == name)
                 let modalCountry = modalCountries[0]
