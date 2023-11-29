@@ -74,7 +74,7 @@ const renderData = async () => {
                 modal.style.display = 'flex'
                 modal.innerHTML = `
                     <div class='modalInfo'>
-                        ${image}
+                    <img class='modalImage' src=${modalCountry.flags[0]} alt=${name} />
                         <div class='modalText'>
                             <h1>${name}</h1>
                             <p>Capital: ${modalCountry.capital}</p>
